@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <!------------------header---------------------->
+    <header class="header" id="header">
+        <a href="#"><img src="newlogo.png" alt="logo"></a>
+        <div class="navMenu" id="navMenu">
+            <i class='bx bx-window-close' onclick="closeMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="garage.html">Garage</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <i class='bx bx-menu' onclick="openMenu()"></i>
+    </header>
+    <!------------------Sub-Header section---------------------->
+    <section class="sub-header" id="sub-header">
+        <h1>ABOUT US</h1>
+    </section>
+    <!------------------About section---------------------->
+    <section class="about" id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <img src="mangoface.png" alt="">
+                <p>Welcome to Manga Autos, where your journey to the perfect car begins. We are more than just a car dealership — we are your trusted partners in helping you find the right vehicle to suit your lifestyle, your budget, and your dreams. Whether you're searching for a brand new car, a reliable used vehicle, or something specific like a family SUV, sporty sedan, or rugged pickup truck, you’ll find it here with us. Our team is made up of passionate professionals who love cars just as much as you do. With years of experience in the automotive industry, we understand what matters most: honesty, transparency, quality, and customer satisfaction. We don't believe in pressure tactics or flashy sales talk — we focus on real conversations and real solutions.</p><br>
+                <p>At Manga Autos, we offer a wide range of vehicles from trusted brands, all carefully inspected and priced fairly. From the moment you step into our showroom to the day you drive off the lot (and even after), we’re here for you. Our finance experts can guide you through flexible payment plans, auto loans, and financing options that make sense — even if it’s your first time buying a car.</p><br>
+                <p>What makes us different? It’s simple: we care. We treat every customer like family, and we aim to build lasting relationships based on trust and respect. Our goal isn’t just to sell cars — it’s to help you make smart, confident decisions that you’ll be happy with for years to come.</p><br>
+                <p>Come visit us, give us a call, or check out our garage section online to see the latest arrivals. We can’t wait to help you get behind the wheel of a car you’ll love.</p>
+            </div>
+            <a href="tel:+2349032216333" class="bot">Let's talk</a>
+    </section>
+    <!------------------Why us section---------------------->
+    <section class="why-choose-us">
+    <h2>WHY US?</h2>
+    <div class="features">
+      <div class="feature">
+            <i class='bx bx-like green'></i>
+            <h3>Trusted Experience</h3>
+            <p>We've earned the trust of countless customers through honest service and reliable deals</p>
+      </div>
+      <div class="feature">
+            <i class='bx bx-car blue'></i>
+            <h3>Quality Vehicles</h3>
+            <p>Every car in our lot is carefully selected, thoroughly inspected and ready to perform.</p>
+      </div>
+      <div class="feature">
+            <i class='bx bx-purchase-tag yellow'></i>
+            <h3>Affordable Prices</h3>
+            <p>Our pricing is transparent, competitve, and designed to fit your budget - no hidden costs.</p>
+      </div>
+      <div class="feature">
+            <i class='bx bx-credit-card purple'></i>
+            <h3>Flexible Payment</h3>
+            <p>We accept swap deals and offer payment plans to suit your budget.</p>
+      </div>
+      <div class="feature">
+            <i class='bx bx-home-alt-2 teal'></i>
+            <h3>Wide Selection</h3>
+            <p>From compact cars to SUVs, luxury models to trucks - we offer a wide variet of cars to match your lifestyle.</p>
+      </div>
+      <p>At Manga Autos, we combine quality vehicles, honest service, and a hassle-free buying experience to give you the confidence you need. We’re not here to just sell cars — we’re here to help you make the right choice. Our transparent pricing, friendly team, and commitment to customer satisfaction set us apart. When you choose us, you’re not just getting a car — you’re gaining a reliable partner you can count on every mile of the way.</p>
+    </div>
+  </section>
+    <footer class="footer">
+        <div class="attribution">
+            <p><i class='bx  bx-laptop'></i> by Icetoonz</p>
+        </div>
+        <div class="move-up">
+            <a href="#about"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </footer>
+<!------------------JS for toggle menu---------------------->
+        <script>
+            var navMenu = document.getElementById("navMenu");
+
+            function openMenu() {
+                navMenu.style.right = "0";
+            }
+            function closeMenu() {
+                navMenu.style.right = "-200px";
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <!------------------header---------------------->
+    <header class="header" id="header">
+        <a href="#"><img src="newlogo.png" alt="logo"></a>
+        <div class="navMenu" id="navMenu">
+            <i class='bx bx-window-close' onclick="closeMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="garage.html">Garage</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+        <i class='bx bx-menu' onclick="openMenu()"></i>
+    </header>
+    <!------------------Sub-Header section---------------------->
+    <section class="sub-header" id="sub-header">
+        <h1>CONTACT US</h1>
+    </section>
+  <!------------------Contact section---------------------->
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.2735894866973!2d7.465844900000004!3d9.038789000000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b18aa01b3a7%3A0x61c113ef2a32e7a2!2sMANGA%20AUTOMOBILES!5e0!3m2!1sen!2sng!4v1751010034906!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Contact Us!</h2>
+            <h4>Get in Touch With Us</h4>
+            <p>We  are a verified dealer in all types of motor vehicles, registered, verified, trustworthy with our CAC registration: <b>RC:3403974</b>. We deal with brand new, foreign used and Nigeria used cars.</p>
+            <p>More of our services include car Ads, Car logistics, and delivery, auctioning, bidding e.t.c. Give us a call and we we'll make the best choice for you. Ater all, we never leave our customers unsatisfied.</p>
+            <p>Please let us know how we can help you, we always gat you covered. <br><br><b>Opened 24/7</b>.</p>
+        <div class="list">
+                    <li>Call or WhatsApp:<a href="tel:+2349032216333">+234 9032216333</a></li>
+                    <li>Email us:<a href="mailto:mohdmanga2@gmail.com">mohdmanga2@gmail.com</a></li>
+                    <li><a href="#contact">Like, Share & Subscribe</a></li>
+                </div>
+                <div class="icons">
+                    <a href="#contact"><i class="bx bxl-facebook"></i></a>
+                    <a href="https://twitter.com/#manga_automobiles" target="_blank"><i class="bx bxl-twitter"></i></a>
+                    <a href="https://instagram.com/manga_automobiles" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+                    <a href="#contact"><i class="bx bxl-youtube"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="">
+                    <input type="name" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="number" placeholder="Phone Number" required>
+                    <textarea name="" id="" cols="35" rows="10" placeholder="How Can We Help You?" required></textarea>
+                    <input type="submit" value="Send Message" class="submit">
+                </form>
+            </div>
+        </section>
+    </section>
+        <footer class="footer">
+            <div class="attribution">
+                <p><i class='bx  bx-laptop'></i> by Icetoonz</p>
+            </div>
+            <div class="move-up">
+                <a href="#contact"><i class="bx bx-up-arrow-alt"></i></a>
+            </div>
+        </footer>
+<!------------------JS for toggle menu---------------------->
+        <script>
+            var navMenu = document.getElementById("navMenu");
+
+            function openMenu() {
+                navMenu.style.right = "0";
+            }
+            function closeMenu() {
+                navMenu.style.right = "-200px";
+            }
+        </script>
+</body>
+</html>

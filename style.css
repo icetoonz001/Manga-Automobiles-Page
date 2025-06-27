@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Math&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+html, body {
+    overflow-x: hidden;
+}
+:root {
+    --big-font: 3rem;
+    --h2-font: 2rem;
+    --p-font: 1rem;
+}
+.header {
+    width: 100%;
+    height: 45px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffd700;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2% 4%;
+    transition: all .45s ease;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.header img {
+    margin-top: 10px;
+    width: 140px;
+}
+.header .bx {
+    display: none;
+}
+.navMenu {
+    flex: 1;
+    text-align: right;
+}
+.navMenu ul li {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 25px;
+    position: relative;
+}
+.navMenu a {
+    color: #000031;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all .45s ease;
+}
+.navMenu a:hover {
+    border-bottom: 2px solid #000031;
+    border-radius: 4px;
+}
+.navMenu .active {
+    border-bottom: 2px solid #000031;
+    border-radius: 4px;
+}
+section {
+    padding: 10px;
+}
+.home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(lamb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.show {
+    margin: 100px 0 20px;
+}
+.first {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 0 15px;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #ffd700;
+    color: black;
+}
+.second {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+.home-content {
+    margin-top: -50px;
+}
+.home-content h1 {
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+    font-style: normal;
+    color: white;
+    line-height: 1.1;
+    margin: 0 0 8px;
+}
+.home-content h3 {
+    color: #ffd700;
+    margin: 0 0 30px;
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    font-style: normal;
+    line-height: 1.1;
+}
+.home-content p {
+    color: white;
+    font-size: var(--p-font);
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+.button {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+.bot {
+    display: inline-block;
+    padding: 12px 16px;
+    background-color: #ffd700;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: black;
+    transition: all .45s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.bot:hover {
+    transform: scale(0.9);
+}
+.about {
+    position: relative;
+    text-align: center;
+    background-color: #f9fcff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+.mango-image {
+    width: 600px;
+    height: auto;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all .45s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+.about a {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    }
+.about .row {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.about .row img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.5s;
+}
+.about .row h5 {
+    text-align: center;
+    color: black;
+    line-height: 1.1;
+    font-weight: 600;
+}
+.why-choose-us {
+    text-align: center;
+    background-color: #f9fcff;
+}
+.why-choose-us h2 {
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-style: normal;
+    margin-top: 50px;
+}
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    width: 100%;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+.feature {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: all .45s ease;
+    cursor: pointer;
+}
+.feature:hover {
+    transform: scale(1.05);
+}
+.feature i {
+    font-size: 40px;
+    margin-bottom: 15px;
+    display: block;
+}
+.green { color: #2ecc71; }   
+.blue { color: #3498db; }    
+.yellow { color: #f1c40f; }  
+.purple { color: #9b59b6; }     
+.teal { color: #1abc9c; }    
+.feature h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+.feature p {
+    font-size: 14px;
+    color: #555;
+}
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 4.5rem;
+    padding: 160px 15% 120px;
+    background-color: #f9fcff;
+    margin-top: -100px;
+}
+.contact-text h2 {
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    line-height: 1;
+}
+.contact-text h4 {
+    font-family: "Zen Dots", sans-serif;
+    font-style: normal;
+    margin: 18px 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+.contact-text p {
+    color: black;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.contact-text .list {
+    margin-bottom: 2.8rem;
+}
+.contact-text .list li {
+    margin-bottom: 12px;
+}
+.contact-text .list li a {
+    color: #000031;
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all .45s ease;
+}
+.contact-text .list li a:hover {
+    color: #ffd700;
+    transform: translateY(5px);
+}
+.contact-text .icons i {
+    width: 45px;
+    height: 45px;
+    color: #000031;
+    font-size: 22px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    transition: all .45s ease;
+}
+.contact-text .icons i:hover {
+    color: #ffd700;
+}
+.contact-form form {
+    top: -50px;
+    position: relative;
+}
+.contact-form form input, .contact-form form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    outline: none;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.contact-form form textarea {
+    resize: none;
+    height: 240px;
+}
+.contact-form form .submit {
+    width: 150px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #ffd700;
+    color: black;
+    transition: all .45s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+.contact-form form .submit:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.garage {
+    padding: 40px 20px;
+    background-color: #f9fcff;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+.garage h2 {
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-style: normal;
+    background-color: #f9fcff;
+    color: #000031;
+}
+.garage-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    margin-top: 0;
+}
+.garage h3 {
+    font-family: "Zen Dots", sans-serif;
+    font-size: normal;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+#car-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.45s ease;
+}
+#car-card:hover {
+  transform: scale(1.03);
+}
+#car-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+#car-card h3 {
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    margin-top: -40px;
+    margin-bottom: 10px;
+    font-style: normal;
+    color: #000031;
+}
+#car-card .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0a66c2;
+  margin-bottom: 10px;
+  margin-top: -15px;
+}
+
+/*--------- bike --------*/
+#car-card-bike {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.45s ease;
+}
+#car-card-bike:hover {
+  transform: scale(1.03);
+}
+#car-card-bike img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+#car-card-bike h3 {
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    margin-top: -40px;
+    margin-bottom: 10px;
+    font-style: normal;
+    color: #000031;
+}
+#car-card-bike .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0a66c2;
+  margin-bottom: 10px;
+  margin-top: -15px;
+}
+#car-card-bike .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0a66c2;
+  margin-bottom: 10px;
+  margin-top: -15px;
+}
+.cars {
+    margin-top: 25px;
+    display: inline-block;
+    padding: 12px 16px;
+    background-color: #ffd700;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: black;
+    transition: all .45s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+.cars:hover {
+    transform: scale(0.9);
+}
+.footer {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    background-color: #ffd700;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.footer .attribution p{
+    color: #000031;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    text-align: center;
+}
+.footer .attribution i {
+    color: #000031;
+    font-size: 20px;
+    margin: 0 3px;
+}
+.footer .move-up i {
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    background-color: #000031;
+}
+
+/*---------- media-queries ----------*/
+@media (max-width: 700px) {
+    .header {
+        top: 0;
+    }
+    .header .bx {
+        display: block;
+        color: black;
+        margin: 10px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .header img {
+        width: 120px;
+    }
+    .home {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(lamb.jpg);
+        background-position: right;
+    }
+    .navMenu {
+        position: fixed;
+        height: 100%;
+        width: 200px;
+        background-color: #ffd700;
+        height: 400px;
+        top: 0;
+        right: -200px;
+        z-index: 2;
+        transition: all .45s ease;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .navMenu ul {
+        padding: 30px;
+    }
+    .navMenu ul li {
+        display: block;
+    }
+    .navMenu a {
+        display: block;
+        margin: 17px;
+        font-size: 20px;
+        transition: all .45s ease;
+        color: #000031;
+    }
+    .home-content {
+        padding: 20px;
+    }
+    .home-content h1, h2 {
+        font-size: 3rem;
+    }
+    .about-content .row .mango-image img {
+        padding: 50px;
+    }
+}
+@media (max-width: 920px) {
+    .contact {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ----------web-pages --------- */
+.sub-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(INTERIOR.png);
+    background-size: cover;
+    background-position: left;
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+.sub-header h1 {
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-size: normal;
+    color: white;
+    margin-top: 150px;
+    font-size: 3rem;
+}
+.about-text img {
+    font-family: "Zen Dots", sans-serif;
+    width: 150px;
+    height: auto;
+}
+.about-text p {
+    font-family: "Libertinus Math", system-ui;
+    font-style: normal;
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.5;
+}
+#about {
+    padding: 30px;
+    background-color: #f9fcff;
+}
+.map {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.map .iframe {
+    border-radius: 10px;
+}
